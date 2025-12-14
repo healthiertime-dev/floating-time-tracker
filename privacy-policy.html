@@ -41,7 +41,7 @@
 
 <h1>Privacy Policy - Floating Time Tracker</h1>
 
-<p><strong>Last updated:</strong> 07/12/2025</p>
+<p><strong>Last updated:</strong> 14/12/2025</p>
 
 <p>
     This Privacy Policy describes how <strong>HealthierTime</strong> (“we”, “us”, or “our”) handles information
@@ -66,14 +66,14 @@
 <h3>1. Device Usage Time (Screen-On Time)</h3>
 
 <p>
-    The App measures how long your device is in use by counting seconds while the device is powered on.
-    This includes time when your phone is on and locked, and when it is on and unlocked.
+    The App measures how long your device is in use by counting seconds while the device's <strong>screen is on</strong>. 
+    This includes time when the screen is on and locked (for example, showing the lock screen) and when it is on and unlocked.
 </p>
 
 <p>The App:</p>
 <ul>
-    <li><strong>Does record</strong> time when the device is powered on (locked or unlocked).</li>
-    <li><strong>Does not record</strong> time when the device is powered off.</li>
+    <li><strong>Does record</strong> time while the screen is on (locked or unlocked).</li>
+    <li><strong>Does not record</strong> time when the screen is off or the device is powered off.</li>
 </ul>
 
 <p>
@@ -85,7 +85,10 @@
 </ul>
 
 <p>
-    This data is stored locally on your device in the App’s private storage.
+   Daily usage is reset at midnight by the App. Lifetime usage continues to increase while you use your
+   device and is only reset if you clear the App’s data or uninstall the App. These values are stored locally
+   on your device in the App’s private storage and updated only while the screen is on, as handled by the
+   foreground tracking service.
 </p>
 
 <h3>2. App Usage Statistics (Foreground App Tracking)</h3>
@@ -110,7 +113,7 @@
 
 <p>
     Per-app usage is only recorded while the device screen is on.
-    This information is used to build the usage table, usage graphs (over ranges such as 7 days to 3 years),
+    This information is used to build the usage table, usage graphs (over ranges such as 7 days to 6 months),
     and optional CSV exports.
 </p>
 
@@ -135,7 +138,8 @@
 <h3>4. Foreground Service</h3>
 
 <p>
-    Floating Time Tracker uses a foreground service to keep the timer and app usage tracking accurate while the device is on.
+    Floating Time Tracker uses a foreground service to keep the timer and app usage tracking accurate while the device is in use. 
+    The service runs on your device and periodically updates usage counters and per-app records.
 </p>
 
 <p>The foreground service:</p>
@@ -173,7 +177,15 @@
     <li>All usage data is stored locally on your device in the App’s private storage.</li>
     <li>No data is stored on servers controlled by HealthierTime.</li>
     <li>No data is sent to third parties.</li>
-    <li>Data remains on your device until you uninstall the App or clear the App’s data.</li>
+    <li>
+        Per-app usage history is automatically pruned according to your chosen retention period
+        in the App’s settings (for example, 3 or 6 months). Each day, any usage entries older than
+        this period are permanently deleted and cannot be recovered.
+    </li>
+    <li>
+        Lifetime totals and other counters inside the App remain until you uninstall the App or
+        clear the App’s data on your device.
+    </li>
     <li>CSV exports remain wherever you saved them until you delete them manually.</li>
 </ul>
 
@@ -187,34 +199,29 @@
     <li>Your name or identity.</li>
     <li>Your email address or phone number.</li>
     <li>Your contacts.</li>
-    <li>Your photos, media, or other personal files.</li>
+    <li>Your photos, media, or other files.</li>
     <li>Your precise location or GPS data.</li>
+    <li>Your account credentials or passwords.</li>
     <li>Advertising identifiers.</li>
     <li>Network identifiers or IP addresses.</li>
     <li>Any content you view or create inside other apps.</li>
 </ul>
 
 <p>
-    We do not use analytics SDKs, advertising SDKs, or tracking libraries in Floating Time Tracker.
-</p>
-
-<h2>Third-Party Sharing</h2>
-
-<p>
-    We do not share your data with any third parties.  
-    There are no third-party servers, external analytics, or advertising services integrated into Floating Time Tracker.
+    We do not build profiles about you and we do not use analytics SDKs, advertising SDKs, or tracking cookies.
 </p>
 
 <h2>Security</h2>
 
 <p>
-    Because all processing is performed locally and no data is transmitted,
-    the risk of data exposure is significantly reduced.
+    Because all data is stored locally on your device, the security of your data primarily depends on the
+    security of your device and operating system. We do not control your device’s security settings, backups,
+    or any third-party apps or services you may use.
 </p>
 
 <p>
-    However, if you export CSV files and store them in external locations (for example, cloud storage or shared folders),
-    their security will depend on how you manage those locations and services.
+    If you export data to CSV and store it in cloud storage or share it with others, that exported copy is
+    subject to the security and privacy practices of the services you choose.
 </p>
 
 <h2>Your Choices and Controls</h2>
@@ -229,11 +236,12 @@
     <li>You may choose whether or not to export data to CSV files.</li>
 </ul>
 
-<h2>Changes to This Privacy Policy</h2>
+<h2>Changes to this Privacy Policy</h2>
 
 <p>
     We may update this Privacy Policy from time to time to reflect changes in the App or in legal requirements.
-    When we do, we will update the “Last updated” date at the top of this page.
+    When we do, we will update the “Last updated” date at the top of this page. 
+    Continued use of the App after changes means you accept the updated Privacy Policy.
 </p>
 
 <h2>Contact Us</h2>
@@ -249,7 +257,7 @@
 
 
 <p>
-    <strong>Company:</strong> HealthierTime
+    <strong>Developer:</strong> HealthierTime
 </p>
 
 </body>
